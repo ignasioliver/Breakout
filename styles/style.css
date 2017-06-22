@@ -1,0 +1,83 @@
+#gameTitle {
+    font-family: "Bitstream Charter";
+    color: #536551;
+}
+
+body {
+    color:black;
+    font-family: "Arial";
+    font-size:15px;
+}
+
+#main {
+    width: 50%;
+    margin: 0 auto;
+    font-size: x-large;
+}
+
+#menu {
+    padding: 25px 10px;
+    border-bottom:0;
+    overflow: no-content;
+    min-width: 1000px;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+#header {
+    border-bottom: 0;
+    overflow: no-content;
+    width: 1000px;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    border: #414043 5px solid;
+    background: #626065; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#626065, #536551); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#626065, #536551); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#626065, #536551); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#626065, #536551); /* Standard syntax (must be last) */
+    border-radius: 5px;
+}
+
+input[type=checkbox] {
+    transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+}
+
+#text-ins {
+    text-align: justify;
+    font-size: 0.85em;
+    line-height: 1.5;
+}
+
+div#header div {
+    display: inline-block;
+    padding: 2% 0;
+    margin: 0 2.5%;
+    text-align: center;
+    font-size: 20px;
+}
+
+#gameDiv {
+    position: relative;
+    margin-top: 20px;
+}
+
+#game {
+    background: #eee; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#eee, #b3d9ad); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#eee, #b3d9ad); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#eee, #b3d9ad); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#eee, #b3d9ad); /* Standard syntax (must be last) */
+    border: #666 50px solid;
+    border-bottom-width: 0;
+    display: block;
+    margin: 0 auto;
+}
+/* Code by Ignasi Oliver under the MIT License */

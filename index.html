@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Breakout</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+<div id="menu">
+    <div id="main">
+        <div id = "gameTitle"><h1>Breakout</h1></div>
+        <label for = "refractionLaw">Apply law of refraction  </label><input type = "checkbox" id = "refractionLaw">
+        <br><br>
+        <button id="playGame"><strong>PLAY</strong></button>
+        <br><br>
+        <div id = "ins">
+            <button>Instructions</button>
+            <div id = "text-ins" style="display:none;">
+                <p align = "left">
+                <li>Insert a username and press the spacebar to start the game. You can start from any level you want through the
+                    <strong>Level picker.</strong></li>
+                <li>Use the arrow keys left (<-) and right (->) to move the paddle in order to avoid the ball from falling out.
+                    For every time it does, you lose a life. In that case, the ball will stop. Press the spacebar again and the ball will
+                    be at the initial position -center of the screen. Press the spacebar one last time and the game will be resumed.
+                    <b>Watch out!</b> The ball has memory and it remembers the direction it had when it hit the bottom. It will continue
+                    going <strong>up</strong> to the <strong>opposite</strong> direction!</li>
+                <li>If you change the level when the game has already started -i.e., the ball is running- the game will be restarted.
+                    Your points will be reduced at 0 and your hearts fully restored.</li>
+                <li><strong>This is not an easy-mode game. Value your hearts because they won't be restored at every level!</strong></li>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="displayGame" style="display:none;">
+    <div id="header">
+        <button id="returnCanvas" style="float:left;">Exit</button>
+        <img id="picSound" src="images/audioOff.gif" alt="audio off" width="69" height="51">
+        <div id="level-picker">
+            <strong>Level picker:</strong>
+            <form>
+                <select id="levelPicker">
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                </select>
+            </form>
+            <br><br> <!-- To keep the level picker centered -->
+        </div>
+        <div id="header-center">
+            Username:
+            <input type="text" id="userName">
+            </br>
+            Points this game: <div id="deleted">0</div>
+            </br>
+            <img id="heart1" src="images/heart.png" alt='heart' style='width:50px;'>
+            <img id="heart2" src="images/heart.png" alt='heart' style='width:50px;'>
+            <img id="heart3" src="images/heart.png" alt='heart' style='width:50px;'>
+            <img id="heart4" src="images/heart.png" alt='heart' style='width:50px;'>
+        </div>
+        <div id="ranking">
+            <strong>Top 3 players:</strong><br>
+            <div id="Top_1"></div><br>
+            <div id="Top_2"></div><br>
+            <div id="Top_3"></div>
+        </div>
+    </div>
+    <div id="gameDiv">
+        <canvas id="game"></canvas>
+    </div>
+</div>
+<!-- Load breakout when the whole html is ready -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/breakout.js" defer></script>
+</body>
+</html>
+<!-- Code by Ignasi Oliver under the MIT License -->
